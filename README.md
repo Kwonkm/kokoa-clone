@@ -1,3 +1,3 @@
 # Kokoa Clone
 
-First clone coding
+HTML & CSS first clone coding (kakao)
