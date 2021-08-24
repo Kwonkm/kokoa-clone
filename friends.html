@@ -13,7 +13,7 @@
       href="https://www.kakaocorp.com/page/favicon.ico"
     />
     <!-- page title 옆에 있는 작은 아이콘 설정 -->
-    <title>KokoaTalk</title>
+    <title>KokoaTalk-main</title>
     <!-- 웹페이지 상단 바에 노출되는 title -->
     <meta name="description" content="Hello kokoa!" />
     <!-- 웹 검색시 사이트를 세부적으로 설명해주는 meta data. name 설정을 잘해야 함. SEO에 이용되므로 정말 중요한 tag임. -->
@@ -36,19 +36,39 @@
       </div>
     </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Account, log in with your email or phone number.
-      </p>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
     </header>
 
-    <form action="friends.html" method="get" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__a" href="friends.html"
+            ><i class="fas fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
+        </li>
+        <li>
+          <a class="nav__link" href="#">
+            <span class="nav__alret"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

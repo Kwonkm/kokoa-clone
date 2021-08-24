@@ -8,34 +8,18 @@
 /* transformation은 다른 요소에 영향을 안준다. */
 /* @keyframes를 이용해 animation을 만들 수 있다. */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import 'reset.css';
+@import 'variables.css';
+
+/* Components */
+@import 'components/status-bar.css';
+@import 'components/nav-bar.css';
+@import 'components/screen-header.css';
+
+/* Screens */
+@import 'screens/login.css';
+
 body {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
-  flex-direction: column;
-}
-
-div {
-  background-color: teal;
-  width: 200px;
-  height: 200px;
-}
-
-@media screen and (orientation: portrait) {
-  div {
-    background-color: teal;
-  }
-  span {
-    font-size: 36px;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  div {
-    background-color: thistle;
-  }
-  span {
-    display: none;
-  }
+  font-family: 'Open Sans', sans-serif;
 }
