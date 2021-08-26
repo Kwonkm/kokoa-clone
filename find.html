@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- 기본 tag -->
+<html lang="ko">
+  <!-- 웹사이트 검색 엔진에 이용되는 정보; 사이트에서 사용되는 언어가 무엇인지 알려주는 정보; ex) ko:한국어, en: 영어 -->
+  <head>
+    <!-- 사이트에 대한 정보들을 담는 tag -->
+    <meta charset="UTF-8" />
+    <!-- 특수문자, 한국어 사용 유니코드 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://www.kakaocorp.com/page/favicon.ico"
+    />
+    <!-- page title 옆에 있는 작은 아이콘 설정 -->
+    <title>KokoaTalk-main</title>
+    <!-- 웹페이지 상단 바에 노출되는 title -->
+    <meta name="description" content="Hello kokoa!" />
+    <!-- 웹 검색시 사이트를 세부적으로 설명해주는 meta data. name 설정을 잘해야 함. SEO에 이용되므로 정말 중요한 tag임. -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS 링크. CSS를 html파일에 작성하고 싶으면 <head>에 <style> 태그를 이용해 작성하면 된다. 그러나 분리하는 것이 가장 좋음.-->
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>111%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <div>
+          <span><i class="fas fa-search fa-lg"></i></span>
+        </div>
+        <div class="screen-header__cog">
+          <span><i class="fas fa-cog fa-lg"></i></span>
+          <span class="screen-header__alret dot"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__a" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="more.html">
+            <span class="nav__alret dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
