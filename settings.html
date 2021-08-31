@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- 기본 tag -->
+<html lang="ko">
+  <!-- 웹사이트 검색 엔진에 이용되는 정보; 사이트에서 사용되는 언어가 무엇인지 알려주는 정보; ex) ko:한국어, en: 영어 -->
+  <head>
+    <!-- 사이트에 대한 정보들을 담는 tag -->
+    <meta charset="UTF-8" />
+    <!-- 특수문자, 한국어 사용 유니코드 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://www.kakaocorp.com/page/favicon.ico"
+    />
+    <!-- page title 옆에 있는 작은 아이콘 설정 -->
+    <title>KokoaTalk-main</title>
+    <!-- 웹페이지 상단 바에 노출되는 title -->
+    <meta name="description" content="Hello kokoa!" />
+    <!-- 웹 검색시 사이트를 세부적으로 설명해주는 meta data. name 설정을 잘해야 함. SEO에 이용되므로 정말 중요한 tag임. -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS 링크. CSS를 html파일에 작성하고 싶으면 <head>에 <style> 태그를 이용해 작성하면 된다. 그러나 분리하는 것이 가장 좋음.-->
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>111%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Settings</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWPzN7A4O2m1eWd0uPA4O+PzN2Py97A4e3D4u+53euVzuCr1+eQy96Z0OGo1uaz2+q32+zZhSz9AAAECElEQVR4nO3c25KcIBAGYEFoTqvO+z9tQGdq3WScod0x2Nb/3eQmqeIPIAft6ToAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZ6PsPatqQ4+RcsddjSqPuY0dZ6xZ9FFHUk/HOe+ULM+l4oYREtg/KqzXj/U1T6dkLBJ3zGfUPY0LJaFu37/fiLXefcf9GdMaHQfyDhzr9rP++B2uyndyQc7snv51vjjhZqfkWk3/Rg0vG0HVfrZu5mw2ve/AeUW5AejNE71ywUtf/VBWwzMXWLd2prwtYIurWbd2nMl9ZTUxs3dg9KsfoYhI4D+O7ZeIHP7RuL9/ECWjcrXV72aJ6shPdTqjUIG0LPhrWKFUmtW4x19MD06tODMIOUpHVgXNGSc8aKqs9b5Dmp+nYutkM1FHiPGcWsrZuNrADllOUIDZwB2mOKOpJQ+x8mai9KXH2pHdeVMLu6gnJ8qehrBMU0Y6EkuZhXg/5q4WStVoQ6+w0E7Yedknxdt5KOVl7mnILxUzotbAbRW7A/KARdr0/MRPmaShp09Zxj09GCbwyZe2981mrdXvZ7MgbpOKuaTr7xUroBb4lJc3YfftRYMBy3VYtkLAHaTffDMb6NVHSPdsK5Y2Nq7kYdvJWioWdp+L7hD7Jm4R3lmresIl9Azybe9G97EZRN8HP9Hm/spWwvPxVWt5T9Ccagt+6/87ZwyB2Dn6zWm3MRmNGYS+cttikvFk9VecVxHiThJ0It9j5+70pB8zJSjaXF0mvgtRF8Imlp2KfQt7HOW9MCKl8InyRHlwjG+MwREH3ogAAAABXd68wIJoL8TaVv2BXf1+Q5WVgzd6alhI2cdvw0jF5m91XGGJHkg7CS1MHPYW5yrBCPjKGSQ+rf31qNvfHkEzx9h5xdZ/h8uF46ksxZusAFXTwczrO95fOLfca4+nPjlSunYxifuP96EilvDrx3U0ZX9TXFKu95JW2Jy0OLhOorlbtXcYQ7UmnY6/YH9E8YU5b6GVHr9gfQj2PqJbq4FOhUsj1gXSPkH6yJ9vlfJUp+MGEeTK2jvQXmz4ZsNz7+3CugcqqNazjbqeJmKeL/mwP3qXz/BRBfPabEL/n+5MEJMusU6uUd+Nn+YWXdES+OeNJqoMZHwZxE/q+dbjZRzajGxFN63CZHQ7Lp9Q5vqvl1x1whOYzkeJxY7Q4wYqxo1iUw03NV/1D8xWNb25oOGqleDC6bR9S2vyk61Nar/rh6ICudZnCYfuZB9P4V0+GY04VK860XfQ5FQd7ta01SceP0sa/tTAdPUhV6+pZbg3eDqbtwzT4uleEv9IyIOn/oO23/K13xddw/f/F6ycEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgJ/+AC+SKGp4Egq/AAAAAElFTkSuQmCC"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Kwonkm</h4>
+            <h6 class="user-component__subtitle">
+              +82 6732 2832 <span class="user-component__subtitle-alert"><i class="fas fa-exclamation-circle"></i></span></i>
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__colum">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
+      </div>
+      <div class="icon-row more-screen">
+        <div class="icon-row__icon">
+          <i class="far fa-calendar-check"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-hdd"></i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-grin-stars"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-brush fa-rotate-180"></i>
+          <span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-user-circle"></i>
+          <span>Account</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-comments"></i>
+          <span>OpenChat</span>
+        </div>
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="mores-suggestions__icon-text">Kokoa Story</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="mores-suggestions__icon-text">Kokoa Story</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__a" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="nav__link" href="more.html">
+            <span class="nav__alret dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

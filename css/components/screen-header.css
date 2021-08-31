@@ -16,6 +16,10 @@
   display: flex;
 }
 
+.screen-header__icons span {
+  margin-left: 15px;
+}
+
 .screen-header__cog {
   position: relative;
   margin-left: 20px;
