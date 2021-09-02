@@ -100,3 +100,16 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+
+.open-post__heart-count:active i {
+  animation: heartBeat 0.5s ease-in forwards;
+}

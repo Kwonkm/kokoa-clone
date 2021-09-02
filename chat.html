@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- CSS 링크. CSS를 html파일에 작성하고 싶으면 <head>에 <style> 태그를 이용해 작성하면 된다. 그러나 분리하는 것이 가장 좋음.-->
   </head>
-  <body>
-    <div class="status-bar">
+  <body id="chat-screen">
+    <div class="status-bar chat-status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fas fa-wifi"></i>
@@ -38,68 +38,55 @@
 
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more.html"><i class="fas fa-angle-left fa-3x"></i></a>
+        <a href="chats.html"><i class="fas fa-angle-left fa-3x"></i></a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Settings</h1>
+        <h1 class="alt-header__title">Kwonkm</h1>
       </div>
       <div class="alt-header__column">
-        <i class="fas fa-search fa-lg"></i>
+        <span> <i class="fas fa-search fa-lg"></i> </span>
+        <span> <i class="fas fa-bars fa-lg"></i> </span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-bullhorn"></i>
-            <span>Notices</span>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2021</div>
+
+      <div class="message-row">
+        <img
+          src="https://cdns-images.dzcdn.net/images/artist/c619e4cef93d6fa98a38018d92106bb6/500x500.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">IU</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi !</span>
+            <span class="message__time">21:27</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-flask"></i>
-            <span>Kokoa Lab</span>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <!-- modifier -->
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi, nice to meet you !</span>
+            <span class="message__time">21:27</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-code-branch"></i>
-            <span>Version</span>
-          </div>
-          <div class="settings__setting-column">Latest Version</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__a" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li>
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i
-          ></a>
-        </li>
-        <li>
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li>
-          <a class="nav__link" href="more.html">
-            <span class="nav__alret dot"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button><i class="far fa-paper-plane"></i></button>
+      </div>
+    </form>
 
     <div id="no-mobile">
       <span>Your screen is too big</span>
